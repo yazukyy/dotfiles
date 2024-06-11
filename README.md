@@ -20,5 +20,10 @@ To display images in Neofetch, you need to install [ImageMagick](https://archlin
 
 ![screenshot-1](https://github.com/yazukyy/dotfiles/assets/172341595/8402809d-89f8-447f-8d8d-574188cbed54)
 
+### -
 
 ![Screenshot2](https://github.com/yazukyy/dotfiles/assets/172341595/1d840b51-d77a-406e-896d-f26069e68701)
+
+### -
+
+![screenshot-3](https://github.com/yazukyy/dotfiles/assets/172341595/4d3d20ca-1a84-4269-aef4-2d5f1be6ac84)
