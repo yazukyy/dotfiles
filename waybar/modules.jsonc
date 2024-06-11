@@ -1,0 +1,35 @@
+// Modules configuration
+{
+  "clock#time": {
+    "format": "<span color=\"#7aa2f7\">    </span>{:%H:%M} ",
+    "interval": 1,
+  },
+
+  "cpu": {
+    "format": "<span color=\"#7aa2f7\">   </span>{usage}% ",
+    "interval": 4,
+  },
+
+  "battery": {
+    "format": "<span color=\"#7aa2f7\">󰁹 </span>{capacity}% ",
+    "interval": 4,
+  },
+
+  "memory": {
+    "format": "<span color=\"#7aa2f7\">  </span>{used}GiB",
+    "interval": 4,
+  },
+
+  "wireplumber": {
+    "scroll-step": 5, // %, can be a float
+    "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
+    "format-muted": "<span color=\"#f7768e\"> </span>Muted",
+    "format-icons": [" ", " ", " "],
+    "on-click": "pavucontrol",
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "on-click": "activate",
+  },
+}

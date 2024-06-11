@@ -1,0 +1,80 @@
+* {
+  font-family: SourceCodePro;
+  font-weight: 600;
+  font-size: 11.5pt;
+  color: #c0caf5;
+}
+
+/* main waybar */
+window#waybar {
+  background: rgba(26, 27, 38, 0);
+}
+
+/* when hovering over modules */
+tooltip {
+  background: #1e1e2e;
+  border-radius: 5%;
+}
+
+#workspaces button {
+  padding: 2px;
+}
+
+/* Sets active workspace to have a solid line on the bottom */
+#workspaces button.active {
+  border-bottom: 2px solid #7aa2f7;
+  border-radius: 0;
+  margin-top: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* More workspace stuff for highlighting on hover */
+#workspaces button.focused {
+  color: #a6adc8;
+}
+
+#workspaces button.urgent {
+  color: #f7768e;
+}
+
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+}
+
+/* Sets background, padding, etc for all modules */
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#battery,
+#wireplumber {
+  background: rgba(31, 33, 34, 1);
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0;
+  border-radius: 0px;
+}
+
+#workspaces {
+  border-radius: 0px 26px 0px 0px;
+  padding-right: 8px;
+}
+
+#clock {
+  border-radius: 26px 26px 0px 0px;
+}
+
+#memory { 
+  border-radius: 0px;
+  /* padding-right: 30px; */
+}
+
+#cpu {
+  border-radius: 26px 0px 0px 0px;
+}
+
+#wireplumber {
+  border-radius: 0px;
+}
+
