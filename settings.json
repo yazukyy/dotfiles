@@ -35,6 +35,10 @@
         "editorGroupHeader.tabsBackground": "#09090F",
         "tab.activeBackground": "#09090F",
         "tab.activeForeground": "#c7b198",
-        "tab.inactiveBackground": "#09090F"
+        "tab.inactiveBackground": "#09090F",
+        "terminal.background": "#09090F",
+        "panel.background": "#09090F",
+        "panelSectionHeader.background": "#09090F",
+        "panelTitle.activeBorder": "#09090F"
     }
 }
