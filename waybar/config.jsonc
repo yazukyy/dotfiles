@@ -1,15 +1,14 @@
 [
   {
-    "position": "bottom", // you can use top or bottom
-    "layer": "top", // Waybar on highest layer so tooltips go over windows
+    "position": "top", // you can use top or bottom
     "output": "eDP-1", // Set output to primary monitor
-    "height": 33, // Set height
+    "height": 52, // Set height 
 
-    "modules-left": ["hyprland/workspaces"], 
-    "modules-center": ["clock#time"], 
-    "modules-right": ["cpu", "memory", "battery", "wireplumber"],
-
-    "include": ["~/.config/waybar/modules.jsonc"]
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/spotify","custom/spotify-previous","custom/spotify-pause","custom/spotify-next","pulseaudio/slider"],
+    "modules-right": ["pulseaudio", "clock#time"],
+    
+    "reload_style_on_change": true, 
+    "include": ["~/.config/waybar/modules.jsonc"],
   }
 ]
-
