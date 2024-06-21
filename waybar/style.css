@@ -1,80 +1,137 @@
 * {
-  font-family: SourceCodePro;
+  font-family: FiraCode Nerd Font;
   font-weight: 600;
-  font-size: 11.5pt;
-  color: #c0caf5;
+  font-size: 15pt;
+  color: #D4BE98;
 }
 
-/* main waybar */
+
 window#waybar {
-  background: rgba(26, 27, 38, 0);
+  background: rgba(0,0,0,0);
 }
 
-/* when hovering over modules */
+
 tooltip {
-  background: #1e1e2e;
-  border-radius: 5%;
+  background: #09090F;
+  border-radius: 20px;
 }
 
-#workspaces button {
-  padding: 2px;
-}
 
-/* Sets active workspace to have a solid line on the bottom */
-#workspaces button.active {
-  border-bottom: 2px solid #7aa2f7;
-  border-radius: 0;
-  margin-top: 2px;
-  transition: all 0.5s ease-in-out;
-}
-
-/* More workspace stuff for highlighting on hover */
-#workspaces button.focused {
-  color: #a6adc8;
-}
-
-#workspaces button.urgent {
-  color: #f7768e;
-}
-
-#workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
-}
-
-/* Sets background, padding, etc for all modules */
 #workspaces,
 #clock,
 #cpu,
+#pulseaudio-slider,
 #memory,
 #battery,
-#wireplumber {
-  background: rgba(31, 33, 34, 1);
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 0;
-  border-radius: 0px;
+#custom-spotify,
+#custom-spotify-previous,
+#custom-spotify-pause,
+#custom-spotify-next,
+#pulseaudio {
+  color: #FFFEFC;
+  background: #09090F;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
+
 
 #workspaces {
-  border-radius: 0px 26px 0px 0px;
-  padding-right: 8px;
+  border-radius: 20px;
+  margin-left: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
+
+
+#workspaces button.active {
+  border-bottom: 3px solid #EA6962;
+  border-radius: 0px;
+  margin-top: 2px;
+  transition: all 0.25s ease-in-out;
+}
+
+
+#custom-spotify {
+  color: #D4BE98;
+  padding: 0px 15px 0px 14px;
+  border-radius: 20px;
+  margin-right: 35px;
+}
+
+
+#custom-spotify-previous,
+#custom-spotify-pause,
+#custom-spotify-next {
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 50px;
+}
+
+#custom-spotify-previous,
+#custom-spotify-next{
+  color: #FFFEFC;
+}
+
+#custom-spotify-pause {
+  font-size: 25px;
+  background-color: #FFFEFC;
+  color: #09090F;
+  margin: 10px 5px 0px 5px;
+  border-radius: 50px;
+  padding: 2px 15px 2px 15px;
+
+}
+
+
+#pulseaudio-slider {
+  margin-left: 35px;
+  border-radius: 35px;
+  padding-right: 19px;
+  padding-left: 19px;
+}
+
+
+#pulseaudio-slider slider {
+   background-image: linear-gradient(to right, #282828, #282828);
+   opacity: 0;
+   border: 1px solid;
+   color: #282828;
+   border-color: #282828;
+
+
+}
+
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: #09090F;
+}
+
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: #FFFEFC;
+}
+
+
+#cpu,
+#pulseaudio{
+  border-radius: 20px 0px 0px 20px;
+}
+
+
+#cpu,
+#pulseaudio {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 
 #clock {
-  border-radius: 26px 26px 0px 0px;
+  margin-right: 12px;
+  padding-right: 12px;
+  border-radius: 0px 20px 20px 0px;
 }
-
-#memory { 
-  border-radius: 0px;
-  /* padding-right: 30px; */
-}
-
-#cpu {
-  border-radius: 26px 0px 0px 0px;
-}
-
-#wireplumber {
-  border-radius: 0px;
-}
-
